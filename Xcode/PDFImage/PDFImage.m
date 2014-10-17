@@ -84,6 +84,10 @@ static NSCache* sharedPDFImageCache = nil;
 + (instancetype) imageResource:(NSString*) name ofType:(NSString*) type inBundle:(NSBundle*) bundle
 {
 	NSString* filepath = [bundle pathForResource:name ofType:type];
+	if(filepath == nil) {
+		NSString * idiomString = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? @"~pad":@"~phone";
+		filepath = [bundle pathForResource:[name stringByAppendingString:idiomString] ofType:type];
+	}
 	NSString* cacheKey = filepath;
 	
 	static dispatch_once_t onceToken;

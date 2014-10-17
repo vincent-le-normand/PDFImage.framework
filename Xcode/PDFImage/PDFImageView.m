@@ -40,7 +40,21 @@
 
 @end
 
-@implementation PDFImageView
+@implementation PDFImageView {
+	NSString * _imageName;
+}
+
+- (void) initComon {
+	[self setBackgroundColor:[UIColor clearColor]];
+	
+	_options = [[PDFImageOptions alloc] init];
+	[_options setContentMode:self.contentMode];
+	
+	_imageView = [[UIImageView alloc] init];
+	_imageView.contentMode = UIViewContentModeCenter;
+	[_imageView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
+	[self addSubview:_imageView];
+}
 
 - (instancetype) initWithFrame:(CGRect)frame
 {
@@ -48,16 +62,18 @@
 	
 	if(self != nil)
 	{
-		[self setBackgroundColor:[UIColor clearColor]];
-		
-		_options = [[PDFImageOptions alloc] init];
-		[_options setContentMode:self.contentMode];
-		
-		_imageView = [[UIImageView alloc] init];
-		[_imageView setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
-		[self addSubview:_imageView];
+		[self initComon];
 	}
 	
+	return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+	self = [super initWithCoder:coder];
+	if (self) {
+		[self initComon];
+	}
 	return self;
 }
 
@@ -75,8 +91,14 @@
 - (void) drawRect:(CGRect)rect
 {
 	[super drawRect:rect];
-	
+
+#if !TARGET_INTERFACE_BUILDER
 	[self.imageView setImage:self.currentUIImage];
+	self.imageView.frame = self.bounds;
+#else
+	self.imageView.frame = self.bounds;
+	[self.currentUIImage drawInRect:self.bounds];
+#endif
 }
 
 - (void) setContentMode:(UIViewContentMode)contentMode
@@ -105,6 +127,37 @@
 #pragma mark -
 #pragma mark Self
 
+- (CGSize) intrinsicContentSize {
+	return _image.size;
+}
+
+- (NSString*) imageName {
+	return _imageName;
+}
+
+- (void) setImageName:(NSString *)imageName {
+	if( imageName ){
+		_imageName = imageName;
+#if !TARGET_INTERFACE_BUILDER
+		PDFImage * image = [PDFImage imageNamed:imageName];
+#else
+		PDFImage * image = nil;
+		
+		NSString * projectSourceDirectories = [[NSProcessInfo processInfo] environment][@"IB_PROJECT_SOURCE_DIRECTORIES"];
+		NSArray * dirs = [projectSourceDirectories componentsSeparatedByString:@":"];
+		for (NSString *imagePath in dirs) {
+			NSString *path = [[imagePath stringByAppendingPathComponent:imageName] stringByAppendingPathExtension:@"pdf"];
+			if([[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:NULL]) {
+				image = [[PDFImage alloc] initWithContentsOfFile:path];
+				break;
+			}
+		}
+
+#endif
+		[self setImage:image];
+	}
+}
+
 - (void) setImage:(PDFImage *)image
 {
 	_image = image;
@@ -126,7 +179,9 @@
 
 - (UIImage*) currentUIImage
 {
-	[self.options setSize:self.frame.size];
+	CGSize size = self.bounds.size;
+
+	[self.options setSize:size];
 	
 	if(!CGSizeEqualToSize(self.options.size, CGSizeZero))
 	{

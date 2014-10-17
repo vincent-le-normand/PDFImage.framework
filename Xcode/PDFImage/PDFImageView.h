@@ -29,10 +29,11 @@
 
 @class PDFImage;
 
-@interface PDFImageView : UIView
+IB_DESIGNABLE @interface PDFImageView : UIView
 
 @property (nonatomic, strong) PDFImage* image;
 @property (nonatomic, copy) UIColor* tintColor;
+@property (nonatomic, copy) IBInspectable NSString * imageName;
 
 //	Returns the current UIImage based on frame, tint, etc etc
 - (UIImage*) currentUIImage;
