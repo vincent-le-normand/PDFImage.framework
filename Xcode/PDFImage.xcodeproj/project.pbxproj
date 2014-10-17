@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF59AE3A19F157F3006557B8 /* PDFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BF59AE3919F157F3006557B8 /* PDFImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF59AE4C19F157F4006557B8 /* PDFImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF59AE3519F157F2006557B8 /* PDFImage.framework */; };
+		BF59AE4D19F157F4006557B8 /* PDFImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF59AE3519F157F2006557B8 /* PDFImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF59AE5919F1583D006557B8 /* PDFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C0FC19C0805800431A7D /* PDFImage.m */; };
+		BF59AE5A19F15840006557B8 /* PDFImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C340C0FF19C0805800431A7D /* PDFImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF59AE5B19F15843006557B8 /* PDFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C10019C0805800431A7D /* PDFImageView.m */; };
+		BF59AE5C19F15846006557B8 /* PDFImageOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = C340C0FD19C0805800431A7D /* PDFImageOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF59AE5D19F1584A006557B8 /* PDFImageOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C0FE19C0805800431A7D /* PDFImageOptions.m */; };
+		BF59AE5E19F1584C006557B8 /* PDFBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C340C0F919C0805800431A7D /* PDFBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF59AE5F19F15850006557B8 /* PDFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C0FA19C0805800431A7D /* PDFBarButtonItem.m */; };
+		BF59AE6019F15853006557B8 /* PDFImageViewLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C340C10119C0805800431A7D /* PDFImageViewLayer.h */; };
+		BF59AE6119F1585D006557B8 /* PDFImageViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C340C10219C0805800431A7D /* PDFImageViewLayer.m */; };
 		C32452DC18769F2E00FBCF88 /* PDFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32452DB18769F2E00FBCF88 /* PDFAppDelegate.m */; };
 		C32452ED1876A29900FBCF88 /* PDFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32452EA1876A29900FBCF88 /* PDFNavigationController.m */; };
 		C32452EE1876A29900FBCF88 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32452EC1876A29900FBCF88 /* PDFViewController.m */; };
@@ -55,7 +67,7 @@
 		C340C11C19C082C600431A7D /* tint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C3CBB330187700CD007A9620 /* tint.pdf */; };
 		C340C11D19C082C900431A7D /* locale.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C3CBB3191876F7ED007A9620 /* locale.pdf */; };
 		C340C15119C0896900431A7D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C340C15019C0896900431A7D /* LaunchScreen.xib */; };
-		C340C18419C0940C00431A7D /* PDFImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImage.framework */; };
+		C340C18419C0940C00431A7D /* PDFImageOld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImageOld.framework */; };
 		C343B02E1893BB1B0048FE48 /* PDFBarButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C343B02D1893BB1B0048FE48 /* PDFBarButtonDemoViewController.m */; };
 		C3AED87C18769B430035F18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C399527F187694E100221C8A /* Foundation.framework */; };
 		C3AED87E18769B430035F18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AED87D18769B430035F18E /* CoreGraphics.framework */; };
@@ -70,11 +82,18 @@
 		C3CBB32B1876FE3A007A9620 /* extension3.PdF in Resources */ = {isa = PBXBuildFile; fileRef = C3CBB3281876FE3A007A9620 /* extension3.PdF */; };
 		C3CBB331187700CD007A9620 /* tint.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C3CBB330187700CD007A9620 /* tint.pdf */; };
 		C3CBB3391877011B007A9620 /* PDFTintColorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CBB3381877011B007A9620 /* PDFTintColorDemoViewController.m */; };
-		C3CF6EC419C0968A007B9E7A /* PDFImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C3CF6F0519C099C0007B9E7A /* PDFImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImage.framework */; };
+		C3CF6EC419C0968A007B9E7A /* PDFImageOld.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImageOld.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3CF6F0519C099C0007B9E7A /* PDFImageOld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C340C0D819C07FB000431A7D /* PDFImageOld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF59AE4A19F157F4006557B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3995270187694E100221C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF59AE3419F157F2006557B8;
+			remoteInfo = PDFImage;
+		};
 		C340C0E319C07FB000431A7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3995270187694E100221C8A /* Project object */;
@@ -119,7 +138,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C3CF6EC419C0968A007B9E7A /* PDFImage.framework in Embed Frameworks */,
+				C3CF6EC419C0968A007B9E7A /* PDFImageOld.framework in Embed Frameworks */,
+				BF59AE4D19F157F4006557B8 /* PDFImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +147,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF59AE3519F157F2006557B8 /* PDFImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF59AE3819F157F3006557B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF59AE3919F157F3006557B8 /* PDFImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFImage.h; sourceTree = "<group>"; };
+		BF59AE4719F157F4006557B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF59AE4819F157F4006557B8 /* PDFImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFImageTests.swift; sourceTree = "<group>"; };
 		C32452DA18769F2E00FBCF88 /* PDFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAppDelegate.h; sourceTree = "<group>"; };
 		C32452DB18769F2E00FBCF88 /* PDFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFAppDelegate.m; sourceTree = "<group>"; };
 		C32452E91876A29900FBCF88 /* PDFNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFNavigationController.h; sourceTree = "<group>"; };
@@ -153,7 +178,7 @@
 		C32453111876A63600FBCF88 /* 11.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 11.pdf; sourceTree = "<group>"; };
 		C32453131876A9E200FBCF88 /* PDFAnimationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAnimationDemoViewController.h; sourceTree = "<group>"; };
 		C32453141876A9E200FBCF88 /* PDFAnimationDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFAnimationDemoViewController.m; sourceTree = "<group>"; };
-		C340C0D819C07FB000431A7D /* PDFImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C340C0D819C07FB000431A7D /* PDFImageOld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFImageOld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340C0DB19C07FB000431A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C340C0E219C07FB000431A7D /* PDFImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C340C0E719C07FB000431A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,6 +219,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BF59AE3119F157F2006557B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C340C0D419C07FB000431A7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,7 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3CF6F0519C099C0007B9E7A /* PDFImage.framework in Frameworks */,
+				C3CF6F0519C099C0007B9E7A /* PDFImageOld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,16 +245,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF59AE4C19F157F4006557B8 /* PDFImage.framework in Frameworks */,
 				C3AED87E18769B430035F18E /* CoreGraphics.framework in Frameworks */,
 				C3AED88018769B430035F18E /* UIKit.framework in Frameworks */,
 				C3AED87C18769B430035F18E /* Foundation.framework in Frameworks */,
-				C340C18419C0940C00431A7D /* PDFImage.framework in Frameworks */,
+				C340C18419C0940C00431A7D /* PDFImageOld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF59AE3619F157F2006557B8 /* PDFImage */ = {
+			isa = PBXGroup;
+			children = (
+				BF59AE3919F157F3006557B8 /* PDFImage.h */,
+				BF59AE3719F157F3006557B8 /* Supporting Files */,
+			);
+			path = PDFImage;
+			sourceTree = "<group>";
+		};
+		BF59AE3719F157F3006557B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF59AE3819F157F3006557B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF59AE4519F157F3006557B8 /* PDFImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF59AE4819F157F4006557B8 /* PDFImageTests.swift */,
+				BF59AE4619F157F4006557B8 /* Supporting Files */,
+			);
+			path = PDFImageTests;
+			sourceTree = "<group>";
+		};
+		BF59AE4619F157F4006557B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF59AE4719F157F4006557B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C32452D918769F2E00FBCF88 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +431,8 @@
 				C3AED88118769B430035F18E /* PDFImageDemo */,
 				C340C0D919C07FB000431A7D /* PDFImage */,
 				C340C0E519C07FB000431A7D /* PDFImageTests */,
+				BF59AE3619F157F2006557B8 /* PDFImage */,
+				BF59AE4519F157F3006557B8 /* PDFImageTests */,
 				C399527E187694E100221C8A /* Frameworks */,
 				C399527D187694E100221C8A /* Products */,
 			);
@@ -373,8 +442,9 @@
 			isa = PBXGroup;
 			children = (
 				C3AED87B18769B430035F18E /* PDFImageDemo.app */,
-				C340C0D819C07FB000431A7D /* PDFImage.framework */,
+				C340C0D819C07FB000431A7D /* PDFImageOld.framework */,
 				C340C0E219C07FB000431A7D /* PDFImageTests.xctest */,
+				BF59AE3519F157F2006557B8 /* PDFImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -415,6 +485,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BF59AE3219F157F2006557B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF59AE5C19F15846006557B8 /* PDFImageOptions.h in Headers */,
+				BF59AE5A19F15840006557B8 /* PDFImageView.h in Headers */,
+				BF59AE6019F15853006557B8 /* PDFImageViewLayer.h in Headers */,
+				BF59AE5E19F1584C006557B8 /* PDFBarButtonItem.h in Headers */,
+				BF59AE3A19F157F3006557B8 /* PDFImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C340C0D519C07FB000431A7D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,9 +512,27 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C340C0D719C07FB000431A7D /* PDFImage */ = {
+		BF59AE3419F157F2006557B8 /* PDFImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C340C0F419C07FB000431A7D /* Build configuration list for PBXNativeTarget "PDFImage" */;
+			buildConfigurationList = BF59AE4E19F157F4006557B8 /* Build configuration list for PBXNativeTarget "PDFImage" */;
+			buildPhases = (
+				BF59AE3019F157F2006557B8 /* Sources */,
+				BF59AE3119F157F2006557B8 /* Frameworks */,
+				BF59AE3219F157F2006557B8 /* Headers */,
+				BF59AE3319F157F2006557B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFImage;
+			productName = PDFImage;
+			productReference = BF59AE3519F157F2006557B8 /* PDFImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C340C0D719C07FB000431A7D /* PDFImageOld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C340C0F419C07FB000431A7D /* Build configuration list for PBXNativeTarget "PDFImageOld" */;
 			buildPhases = (
 				C340C0D319C07FB000431A7D /* Sources */,
 				C340C0D419C07FB000431A7D /* Frameworks */,
@@ -443,9 +543,9 @@
 			);
 			dependencies = (
 			);
-			name = PDFImage;
+			name = PDFImageOld;
 			productName = PDFImage;
-			productReference = C340C0D819C07FB000431A7D /* PDFImage.framework */;
+			productReference = C340C0D819C07FB000431A7D /* PDFImageOld.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C340C0E119C07FB000431A7D /* PDFImageTests */ = {
@@ -482,6 +582,7 @@
 			dependencies = (
 				C340C0EB19C07FB000431A7D /* PBXTargetDependency */,
 				C340C0EF19C07FB000431A7D /* PBXTargetDependency */,
+				BF59AE4B19F157F4006557B8 /* PBXTargetDependency */,
 			);
 			name = PDFImageDemo;
 			productName = PDFImageDemo;
@@ -495,9 +596,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PDF;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Tom Parry";
 				TargetAttributes = {
+					BF59AE3419F157F2006557B8 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					C340C0D719C07FB000431A7D = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -521,13 +625,21 @@
 			projectRoot = "";
 			targets = (
 				C3AED87A18769B430035F18E /* PDFImageDemo */,
-				C340C0D719C07FB000431A7D /* PDFImage */,
+				C340C0D719C07FB000431A7D /* PDFImageOld */,
 				C340C0E119C07FB000431A7D /* PDFImageTests */,
+				BF59AE3419F157F2006557B8 /* PDFImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BF59AE3319F157F2006557B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C340C0D619C07FB000431A7D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,6 +701,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BF59AE3019F157F2006557B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF59AE5D19F1584A006557B8 /* PDFImageOptions.m in Sources */,
+				BF59AE5919F1583D006557B8 /* PDFImage.m in Sources */,
+				BF59AE6119F1585D006557B8 /* PDFImageViewLayer.m in Sources */,
+				BF59AE5B19F15843006557B8 /* PDFImageView.m in Sources */,
+				BF59AE5F19F15850006557B8 /* PDFBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C340C0D319C07FB000431A7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,6 +754,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF59AE4B19F157F4006557B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF59AE3419F157F2006557B8 /* PDFImage */;
+			targetProxy = BF59AE4A19F157F4006557B8 /* PBXContainerItemProxy */;
+		};
 		C340C0E419C07FB000431A7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C3AED87A18769B430035F18E /* PDFImageDemo */;
@@ -637,12 +766,12 @@
 		};
 		C340C0EB19C07FB000431A7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C340C0D719C07FB000431A7D /* PDFImage */;
+			target = C340C0D719C07FB000431A7D /* PDFImageOld */;
 			targetProxy = C340C0EA19C07FB000431A7D /* PBXContainerItemProxy */;
 		};
 		C340C0EF19C07FB000431A7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C340C0D719C07FB000431A7D /* PDFImage */;
+			target = C340C0D719C07FB000431A7D /* PDFImageOld */;
 			targetProxy = C340C0EE19C07FB000431A7D /* PBXContainerItemProxy */;
 		};
 		C3CF6F0119C09978007B9E7A /* PBXTargetDependency */ = {
@@ -678,6 +807,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BF59AE4F19F157F4006557B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PDFImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BF59AE5019F157F4006557B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = PDFImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C340C0F019C07FB000431A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -807,6 +994,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -887,7 +1075,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C340C0F419C07FB000431A7D /* Build configuration list for PBXNativeTarget "PDFImage" */ = {
+		BF59AE4E19F157F4006557B8 /* Build configuration list for PBXNativeTarget "PDFImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF59AE4F19F157F4006557B8 /* Debug */,
+				BF59AE5019F157F4006557B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C340C0F419C07FB000431A7D /* Build configuration list for PBXNativeTarget "PDFImageOld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C340C0F019C07FB000431A7D /* Debug */,

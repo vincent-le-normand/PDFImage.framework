@@ -31,6 +31,25 @@
 //	Make PDF files smaller with PDFShaver.app
 //	https://github.com/tparry/PDFShaver.app
 
+
+//
+//  PDFImage.h
+//  PDFImage
+//
+//  Created by Vincent Le Normand on 17/10/2014.
+//  Copyright (c) 2014 Tom Parry. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+//! Project version number for PDFImage.
+FOUNDATION_EXPORT double PDFImageVersionNumber;
+
+//! Project version string for PDFImage.
+FOUNDATION_EXPORT const unsigned char PDFImageVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <PDFImage/PublicHeader.h>
+
 #import <UIKit/UIKit.h>
 
 #import <PDFImage/PDFImageView.h>
